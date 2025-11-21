@@ -1,0 +1,214 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+   background-color: aqua;
+}
+
+.navbar-brand {
+
+  display: flex;
+  
+}
+.navbar-brand  img{
+  padding-right: 15px;
+  padding-top: 2px;
+}
+
+.navbar-brand p{
+    font-size: 35px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 900;
+  color: #d3c726;
+  margin-top: 0px;
+  
+}
+
+.navbar .nav-item {
+  margin-left: 140px;
+  font-size: 24px; 
+  font-family: 'Poppins', sans-serif;
+  font-weight: 900;
+
+}
+.navbar .nav-item:hover{
+ background: linear-gradient(rgba(255, 0, 0, 0.473),rgba(255, 255, 0, 0.521));
+  border-radius: 5px;
+}
+
+.CARD{
+    display: flex;
+    gap: 30px;
+}
+.card{
+    margin-top: 10px;
+    margin-left: 20px;
+}
+.card img{
+  height: 200px;
+}
+    .card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);
+    }
+
+.card-body{
+    text-align: center;
+}
+.carousel{
+ margin: auto;
+ margin-top: 10px;
+ position: fixed;
+}
+.carousel-item img{
+  border-radius: 6px;
+}
+.carousel-caption p{
+  font: 35px poopins;
+  color: white;
+}
+.carousel-caption{
+background-color: #00000080;
+text-align: center;
+margin-bottom: 90px;
+}
+.carousel-caption h1{
+ font-family:Arial, Helvetica, sans-serif;
+ font-weight: bold;
+ font-size: 50px;
+  font-style: normal;
+  color: red;
+}
+.row{
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.row .card{
+   margin-top: 20px;
+
+}
+.intro {
+  width: 100%;
+  height: 500px;
+  margin-top: -24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  animation: introSlider 6s infinite;
+}
+
+.intro h1 {
+  color: white;
+  font-size: 3rem;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 20px 40px;
+  border-radius: 10px;
+  z-index: 1;
+  position: relative;
+}
+
+@keyframes introSlider {
+  0%, 33% {
+    background-image: url('https://media.istockphoto.com/id/843610508/photo/interior-of-cozy-restaurant-loft-style.jpg?s=612x612&w=0&k=20&c=s_PVQJNzcilxKYpm3O-AxBMx4_om5G0TKuxUmiMl85Y=');
+  }
+  34%, 66% {
+    background-image: url('https://media.istockphoto.com/id/1457979959/photo/snack-junk-fast-food-on-table-in-restaurant-soup-sauce-ornament-grill-hamburger-french-fries.jpg?s=612x612&w=0&k=20&c=QbFk2SfDb-7oK5Wo9dKmzFGNoi-h8HVEdOYWZbIjffo=');
+  }
+  67%, 100% {
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpiz6fMr-Q75hK9pCx51SHjVBmG6TL_06jgw&s');
+  }
+}
+   
+
+.footer-clean {
+  padding:50px 0;
+  background-color:#fff;
+  color:#4b4c4d;
+}
+
+.footer-clean h3 {
+  margin-top:0;
+  margin-bottom:12px;
+  font-weight:bold;
+  font-size:16px;
+}
+
+.footer-clean ul {
+  padding:0;
+  list-style:none;
+  line-height:1.6;
+  font-size:14px;
+  margin-bottom:0;
+}
+
+.footer-clean ul a {
+  color:inherit;
+  text-decoration:none;
+  opacity:0.8;
+}
+
+.footer-clean ul a:hover {
+  opacity:1;
+}
+
+.footer-clean .item.social {
+  text-align:right;
+}
+
+@media (max-width:767px) {
+  .footer-clean .item {
+    text-align:center;
+    padding-bottom:20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer-clean .item.social {
+    text-align:center;
+  }
+}
+
+.footer-clean .item.social > a {
+  font-size:24px;
+  width:40px;
+  height:40px;
+  line-height:40px;
+  display:inline-block;
+  text-align:center;
+  border-radius:50%;
+  border:1px solid #ccc;
+  margin-left:10px;
+  margin-top:22px;
+  color:inherit;
+  opacity:1.75;
+}
+
+.footer-clean .item.social > a:hover {
+  opacity:2.75;
+}
+
+@media (max-width:991px) {
+  .footer-clean .item.social > a {
+    margin-top:40px;
+  }
+}
+
+@media (max-width:767px) {
+  .footer-clean .item.social > a {
+    margin-top:10px;
+  }
+}
+
+.footer-clean .copyright {
+  margin-top:14px;
+  margin-bottom:0;
+  font-size:13px;
+  opacity:1.76;
+}
